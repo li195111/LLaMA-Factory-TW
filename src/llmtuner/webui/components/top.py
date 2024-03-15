@@ -16,7 +16,7 @@ def create_top() -> Tuple["gr.Dropdown", Dict[str, "Component"]]:
     available_models = list(SUPPORTED_MODELS.keys()) + ["Custom"]
 
     with gr.Row():
-        lang = gr.Dropdown(choices=["en", "ru", "zh"], scale=1)
+        lang = gr.Dropdown(choices=["en", "ru", "zh", "zh-tw"], scale=1)
         model_name = gr.Dropdown(choices=available_models, scale=3)
         model_path = gr.Textbox(scale=3)
 
